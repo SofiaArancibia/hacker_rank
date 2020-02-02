@@ -1,0 +1,28 @@
+Objective
+In this challenge, we practice calculating probability. Check out the Tutorial tab for a breakdown of probability fundamentals!
+
+Task
+In a single toss of
+fair (evenly-weighted) six-sided dice, find the probability that their sum will be at most
+
+
+<p>2 / 3</p>
+<p>5 / 6</p>  -> correct answer (*)
+<p>1 / 4</p>
+<p>1 / 6</p> 
+
+
+casos posibles: 36 (6*6)
+casos favorables: 30
+
+	1	2	3	4	5	6
+___________________________________________________
+1 |	2	3	4	5	6	7
+2 |	3	4	5	6	7	8
+3 |	4	5	6	7	8	9
+4 |	5	6	7	8	9	10
+5 |	6	7	8	9	10	11
+6 |	7	8	9	10	11	12
+
+
+p = 30/36 = 5/6
