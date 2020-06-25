@@ -1,0 +1,16 @@
+import math
+
+mu = 20
+sigma = 2
+x = 19.5
+a, b = 20, 22
+
+def get_prob(mu, sigma, x):
+    num = (x - mu)
+    den = (sigma*(math.sqrt(2)))
+    err = math.erf(num/den)
+    cdf = 0.5*(1 + err)
+    return cdf
+
+print(get_prob(mu, sigma,x))
+print(get_prob(mu, sigma, b) - get_prob(mu, sigma, a))
