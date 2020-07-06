@@ -1,0 +1,19 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import math
+
+mu = 70
+sigma = 10
+x1, x2 = 80, 60
+
+
+def get_prob(mu, sigma, x):
+    num = (x - mu)
+    den = (sigma*(math.sqrt(2)))
+    err = math.erf(num/den)
+    cdf = 0.5*(1 + err)
+    return cdf
+
+print(round((1 - get_prob(mu, sigma,x1))*100,2))
+print(round((1 - get_prob(mu, sigma,x2))*100,2))
+print(round((get_prob(mu, sigma,x2))*100,2))
